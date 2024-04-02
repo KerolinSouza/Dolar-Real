@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolar - Real</title>
+</head>
+
+<body>
+
+    <input type="checkbox" name="#" id="toggle" class="toggle-btn">
+    <label for="toggle" class="toggle-label"></label>
+
+    <script type="text/javascript">
+
+
+        var dolares = 0;
+
+        function conversor() {
+
+            var reais = document.getElementById('reais').value;
+
+
+            reais = parseFloat(reais);
+
+
+            dolares = reais / 5.05;
+
+            console.log(dolares);
+
+            alert(dolares + " dolares");
+        }
+    </script>
+
+
+    <h1>Converter Reais para Dólares.</h1>
+    <main>
+        <form>
+            <fieldset>
+                <label>Reais</label>
+                <input type="text" id="reais" />
+                <input type="submit" onclick="conversor()" />
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        Desenvolvido por Kerolin Fragoso - 2024
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

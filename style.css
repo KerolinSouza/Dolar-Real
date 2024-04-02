@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #4180ab;
+    width: 100vw;
+}
+
+header{
+    display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 60px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: block;
+    text-align: center;
+    width: 0px;
+    height: 70px;
+    margin: 200px;
+}
+
+h1{
+    text-align: center;
+       font-size: 150%;
+       font-style: oblique;
+       margin-right: 20%;
+       margin-left: 30%;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+
+   p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+main{
+    margin-bottom: 50px;
+    }
+      
+footer{
+        width: 90%;
+        margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p{
+    margin-top: 20px;
+    text-align: center;
+    
+    }
+
+    button{
+       border-bottom: #15212a;
+    }
+    .dark-mode{
+       color: #4180ab;
+    }
+    
+    .dark-mode h1 {
+       background-color: #70aa87;
+    }
+    
+    .dark-mode footer {
+       color: #e5f3ba;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+    
+    .toggle-label{
+        width: 60px;
+        height: 30px;
+        background-color: #80d3bb;
+        border-radius: 25px;
+        cursor: pointer;
+        position: relative;
+        display: block;
+        margin: 20px;
+    }
+    
+    .toggle-label:before{
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        border-radius: 50px;
+       background-color: #99c9bd;
+        top: 1px;
+        left: 1px;
+        transition: transform 0.4s ease;
+    }
+    
+    .toggle-btn:checked + .toggle-label{
+        background-color: #e4ebf0;
+    }
+    
+    .toggle-btn:checked + .toggle-label:before{
+        transform: translateX(30px);
+    }
+    
+    .dark-mode{
+        background-color: #8ab3cf;
+    }
+    
